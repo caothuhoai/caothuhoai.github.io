@@ -76,7 +76,9 @@ a:hover{
 .profile{
 	padding: 1em;
 }
-.profile-pic{}
+.profile-pic{
+	padding-top: 100px;
+}
 .about-me-text{
 	padding: 1em;
 }
@@ -129,7 +131,7 @@ a:hover{
 	text-align: center;
 	padding: 1rem;
 	margin: 1rem;
-	width: 25%;
+	width: 35%;
 	box-shadow: var(--shadow);
 	color: #fff;
 	background-color: var(--third-color);
