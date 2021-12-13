@@ -11783,6 +11783,17 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>For this project, I want to test my hypothesis that there exists some kind of correlations between risk behaviors and Cervical Cancer. I used 2 datasets from UCI Machine Learning repository: Cervical cancer (Risk Factors) Data Set (long_df, which contains 858 intances with 36 attributes) and Cervical Cancer Behavior Risk Data Set (short_df, which contains 72 instances with 19 attributes and no NaN values). </strong></p>
+<p><strong>For the long_df, I dropped instances containing "?" value and cropped it down to a smaller number of attributes, which I decided to be helpful in deriving conclusion. The short_df doesn't have NaN values so I just had to choose the useful attributes. </strong></p>
+<p><strong>I used pandas to read the datasets in as dataframes, matplotlib and seaborn to create plots like distplot, pairplot heatmap and clustermap, as well as looking for correlations between attributes. </strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="First-of-all,-let's-import-all-the-dependencies-and-load-our-datasets">First of all, let's import all the dependencies and load our datasets<a class="anchor-link" href="#First-of-all,-let's-import-all-the-dependencies-and-load-our-datasets">&#182;</a></h3>
 </div>
 </div>
@@ -11937,6 +11948,15 @@ memory usage: 241.4+ KB
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>The long_df has 858 entries with 36 attributes. Most attributes are named in a meaningful way; however, some of them are a bit confusing for people who have little medical knowledge. For example, Dx is a boolean representing if the patient has Cervical Cancer, and Dx:Cancer is also a boolean representing if the patient has other types of cancer. Hinselmann, Schiller, Citology and Biopsy are tests used to diagnose Cervical cancer.</strong></p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
@@ -11991,6 +12011,15 @@ memory usage: 11.3 KB
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>The short_df is more well defined and cleaner. It has 72 entries with 19 attributes. The attributes are grouped in common categories, which makes it easier to compare and contrast. This is a short dataset but very interesting and informative.</strong></p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
@@ -15545,6 +15574,19 @@ Name: Age, dtype: int64</pre>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Conclusion:-Even-though-there-are-strong-correlations-between-some-attributes-from-both-datasets-(both-positive-and-negative),-there-isn't-enough-evidence-to-conclude-that-there-is-a-clear/strong-relationship-between-Cervical-Cancer-and-Risk-Behaviors.">Conclusion: Even though there are strong correlations between some attributes from both datasets (both positive and negative), there isn't enough evidence to conclude that there is a clear/strong relationship between Cervical Cancer and Risk Behaviors.<a class="anchor-link" href="#Conclusion:-Even-though-there-are-strong-correlations-between-some-attributes-from-both-datasets-(both-positive-and-negative),-there-isn't-enough-evidence-to-conclude-that-there-is-a-clear/strong-relationship-between-Cervical-Cancer-and-Risk-Behaviors.">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Resources:">Resources:<a class="anchor-link" href="#Resources:">&#182;</a></h4><ul>
+<li><a href="http://archive.ics.uci.edu/ml/datasets/Cervical+cancer+%28Risk+Factors%29#">http://archive.ics.uci.edu/ml/datasets/Cervical+cancer+%28Risk+Factors%29#</a></li>
+<li><a href="https://archive.ics.uci.edu/ml/datasets/Cervical+Cancer+Behavior+Risk#">https://archive.ics.uci.edu/ml/datasets/Cervical+Cancer+Behavior+Risk#</a></li>
+<li><a href="https://www.hindawi.com/journals/sp/2021/5540024/">https://www.hindawi.com/journals/sp/2021/5540024/</a></li>
+</ul>
+
 </div>
 </div>
 </div>
